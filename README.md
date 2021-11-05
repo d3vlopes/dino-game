@@ -1,2 +1,2 @@
-# dino-game
-Created with CodeSandbox
+# Sobre
+Jogo de dinossauro baseado no famoso jogo do dinossauro sem internet.

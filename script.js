@@ -45,11 +45,26 @@ function jump() {
 function createCactus() {
   const cactus = document.createElement('div')
   let cactusPosition = 1000
+  let randomTime = Math.random() * 6000
 
   cactus.classList.add('cactus')
   cactus.style.left = `${cactusPosition}px`
   // adiciona a div cactus dentro da div background
   background.appendChild(cactus)
+
+  let leftInterval = setInterval(() => {
+    if(cactusPosition < -60) {
+      // remove os cactus da tela
+      clearInterval(leftInterval)
+      background.removeChild(cactus)
+    } else {
+      cactusPosition = cactusPosition - 10
+      cactus.style.left = `${cactusPosition}px`
+    }
+  },20)
+
+  setTimeout(createCactus, randomTime)
+
 }
 
 createCactus()

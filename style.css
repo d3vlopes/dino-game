@@ -1,7 +1,15 @@
 .dino {
-  width: 60px;
-  height: 60px;
   background: green;
   bottom: 0;
   position: absolute;
+  height: 60px;
+  width: 60px;
+}
+
+.cactus {
+  background: red;
+  bottom: 0;
+  position: absolute;
+  height: 60px;
+  width: 60px;
 }

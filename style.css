@@ -1,5 +1,10 @@
+body {
+  background: #fafafa;
+  overflow: hidden;
+}
+
 .dino {
-  background: green;
+  background-image: url(./assets/img/dino.png);
   bottom: 0;
   position: absolute;
   height: 60px;
@@ -7,9 +12,36 @@
 }
 
 .cactus {
-  background: red;
+  background-image: url(./assets/img/cactus.png);
   bottom: 0;
   position: absolute;
   height: 60px;
   width: 60px;
+}
+
+.game-over {
+  color:#666;
+  font-family: arial;
+  margin-top: 50px;
+  text-align: center;
+}
+
+@keyframes slide {
+  from {
+    background-position: 7000%;
+  } 
+  to {
+    background-position: 0;
+  }
+}
+
+.background {
+  animation: slide 600s infinite linear;
+  background-image: url(./assets/img/background.png);
+  background-repeat: repeat-x;
+  bottom: 0;
+  position: absolute;
+  height: 200px;
+  width: 100%;
+
 }
